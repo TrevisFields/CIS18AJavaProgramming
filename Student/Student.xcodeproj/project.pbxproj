@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		685384FF1BCC67820088F41D /* ShowStudent.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = ShowStudent.java; sourceTree = "<group>"; };
+		685385001BCC67A30088F41D /* Student.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Student.java; sourceTree = "<group>"; };
+		685385011BCC67B70088F41D /* ShowStudent2.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = ShowStudent2.java; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		685384F31BCC67240088F41D = {
+			isa = PBXGroup;
+			children = (
+				685385011BCC67B70088F41D /* ShowStudent2.java */,
+				685385001BCC67A30088F41D /* Student.java */,
+				685384FF1BCC67820088F41D /* ShowStudent.java */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		685384F81BCC67240088F41D /* Student */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) $(TARGETNAME)";
+			buildConfigurationList = 685384FB1BCC67240088F41D /* Build configuration list for PBXLegacyTarget "Student" */;
+			buildPhases = (
+			);
+			buildToolPath = usr/bin/javac;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Student;
+			passBuildSettingsInEnvironment = 1;
+			productName = Student;
+		};
+		685385021BCC687D0088F41D /* ShowStudent */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) $(TARGETNAME)";
+			buildConfigurationList = 685385031BCC687D0088F41D /* Build configuration list for PBXLegacyTarget "ShowStudent" */;
+			buildPhases = (
+			);
+			buildToolPath = usr/bin/javac;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = ShowStudent;
+			passBuildSettingsInEnvironment = 1;
+			productName = Student;
+		};
+		685385061BCC68800088F41D /* ShowStudent2 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) $(TARGETNAME)";
+			buildConfigurationList = 685385071BCC68800088F41D /* Build configuration list for PBXLegacyTarget "ShowStudent2" */;
+			buildPhases = (
+			);
+			buildToolPath = usr/bin/javac;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = ShowStudent2;
+			passBuildSettingsInEnvironment = 1;
+			productName = Student;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		685384F41BCC67240088F41D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Trevis J Fields";
+				TargetAttributes = {
+					685384F81BCC67240088F41D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 685384F71BCC67240088F41D /* Build configuration list for PBXProject "Student" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 685384F31BCC67240088F41D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				685384F81BCC67240088F41D /* Student */,
+				685385021BCC687D0088F41D /* ShowStudent */,
+				685385061BCC68800088F41D /* ShowStudent2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		685384F91BCC67240088F41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		685384FA1BCC67240088F41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		685384FC1BCC67240088F41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		685384FD1BCC67240088F41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		685385041BCC687D0088F41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		685385051BCC687D0088F41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		685385081BCC68800088F41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		685385091BCC68800088F41D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		685384F71BCC67240088F41D /* Build configuration list for PBXProject "Student" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685384F91BCC67240088F41D /* Debug */,
+				685384FA1BCC67240088F41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		685384FB1BCC67240088F41D /* Build configuration list for PBXLegacyTarget "Student" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685384FC1BCC67240088F41D /* Debug */,
+				685384FD1BCC67240088F41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		685385031BCC687D0088F41D /* Build configuration list for PBXLegacyTarget "ShowStudent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685385041BCC687D0088F41D /* Debug */,
+				685385051BCC687D0088F41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		685385071BCC68800088F41D /* Build configuration list for PBXLegacyTarget "ShowStudent2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685385081BCC68800088F41D /* Debug */,
+				685385091BCC68800088F41D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 685384F41BCC67240088F41D /* Project object */;
+}
