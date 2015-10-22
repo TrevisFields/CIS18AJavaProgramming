@@ -445,5 +445,143 @@ public class ArithmeticDemo
 
 
 
+//********************************************************************************************
+
+
+
+
+
+
+//FileName ArithmeticDemo2.java
+//Written By: Trevis J. Fields SID#:2276714
+//Written on: [DATE HERE]
+
+import java.util.Scanner;
+
+public class ArithmeticDemo2
+{
+    public static void main(String[] args)
+    {
+        double fistNumber;
+        double secondNumber;
+        double sum;
+        double difference;
+        double average;
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please enter an double >> ");
+        firstNumber = input.nextDouble();
+        System.out.print("Please enter another double >> ");
+        secondNumber = input.nextDouble();
+        
+        sum = firstNumber + secondNumber;
+        difference = firstNumber - secondNumber;
+        average = sum/2;
+        System.out.print(firstNumber + "+" secondNumber + "is" + sum);
+        System.out.print(firstNumber + "-" secondNumber + "is" + difference);
+        System.out.print("The average of" + firstNumber + "and" + secondNumber + "is" + average);
+        
+    }
+}
+
+
+//***************************************************************************************************
+
+//FileName ArithmeticDemo3.java
+//Written By: Trevis J. Fields SID#:2276714
+//Written on: [DATE HERE]
+
+import java.util.Scanner;
+
+public class ArithmeticDemo3
+{
+    public static void main(String[] args)
+    {
+        int fistNumber;
+        int secondNumber;
+        int sum;
+        int difference;
+        int average;
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Please enter an integer >> ");
+        firstNumber = input.nextInt();
+        System.out.print("Please enter another integer >> ");
+        secondNumber = input.nextInt();
+        
+        sum = firstNumber + secondNumber;
+        difference = firstNumber - secondNumber;
+        average = (double) (sum/2);
+        System.out.print(firstNumber + "+" secondNumber + "is" + sum);
+        System.out.print(firstNumber + "-" secondNumber + "is" + difference);
+        System.out.print("The average of" + firstNumber + "and" + secondNumber + "is" + average);
+        
+    }
+}
+
+
+//******************************************************************************************************
+
+
+//FileName ArithmeticDemo.java
+//Written By: Trevis J. Fields SID#:2276714
+//Written on: [DATE HERE]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
