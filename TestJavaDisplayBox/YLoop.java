@@ -523,12 +523,81 @@ public class ArithmeticDemo3
 //******************************************************************************************************
 
 
-//FileName ArithmeticDemo.java
+//FileName MilesToFeet.java
 //Written By: Trevis J. Fields SID#:2276714
 //Written on: [DATE HERE]
 
 
+import java.util.Scanner;
 
+
+public class MilesToFeet
+{
+    public static  void main(String[] args)
+    {
+        //Scanner input = new Scanner(System.in);
+        double miles = 3;
+        double feet = (15,840);
+        
+        
+        
+        System.out.println("You live " + miles + " or " + feet + " away from your uncle.");
+        system.out.println("That is kind of far, don't you think?");
+        
+        
+       /* System.out.print("Please tell me how far away your uncle's house is from your house");
+        miles = input.nextFloat();
+        System.out.print("Your uncle lives " + miles + " away from you, or " + feet + " feet away from you.");
+        */
+    }
+}
+
+
+
+
+//*********************************************************************************************************
+
+
+
+
+
+
+//ProjectedSales.java
+//Written By: Trevis J Fields SID#: 2276714
+//Written on: [DATE HERE]
+
+
+
+import javax.swing.JOptionPane;
+
+public class ProjectedSales
+{
+    
+    
+    public static void main(String[] args)
+    {
+        const double PERCENT = .10;
+        double sales_North;
+        double sales_South;
+        double next_Year_Projection_North;
+        double next_Yeat_Projection_South;
+        
+        sales_North = 55780;
+        sales_South = 32047;
+        
+        
+        next_Year_Projection_North = sales_North * PERCENT/ 4;
+        next_Year_Projection_South - sales_South * PERCENT /4;
+        
+        
+       
+        
+        JOptionPane.showMessageDialog("At the North Division of the store the sales team had " + sales_North + " in sales each quarter for a grand total of " + (sales_North * 4) + " in sales for the company.");
+        JOptionPane.showMessageDialog("At the South Division of the store the sales team had " + sales_South + " in sales each quarter for a grand total of " + (sales_South * 4) +" in sales for the comany.");
+        JOptionPane.showMessageDialog("The projected sales at the North store are " + next_Year_Projection_North);
+        JOptionPane.showMessageDialog("The projected sales at the Southern store is " + next_Year_Projection_South);
+    }
+}
 
 
 
