@@ -8,12 +8,14 @@
 
 /* Begin PBXFileReference section */
 		6864F8331BC5FD80004795D6 /* JavaDis.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = JavaDis.java; sourceTree = "<group>"; };
+		6883BAB21BD814A7007B4E24 /* YLoop.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = YLoop.java; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.java; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		6864F8281BC5FD09004795D6 = {
 			isa = PBXGroup;
 			children = (
+				6883BAB21BD814A7007B4E24 /* YLoop.java */,
 				6864F8331BC5FD80004795D6 /* JavaDis.java */,
 			);
 			sourceTree = "<group>";
@@ -32,6 +34,20 @@
 			dependencies = (
 			);
 			name = JavaDis;
+			passBuildSettingsInEnvironment = 1;
+			productName = TestJavaDisplayBox;
+		};
+		6883BAA61BD80FC4007B4E24 /* YLoop */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) $(TARGETNAME).java";
+			buildConfigurationList = 6883BAA71BD80FC4007B4E24 /* Build configuration list for PBXLegacyTarget "YLoop" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/javac;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = YLoop;
 			passBuildSettingsInEnvironment = 1;
 			productName = TestJavaDisplayBox;
 		};
@@ -61,6 +77,7 @@
 			projectRoot = "";
 			targets = (
 				6864F82D1BC5FD09004795D6 /* JavaDis */,
+				6883BAA61BD80FC4007B4E24 /* YLoop */,
 			);
 		};
 /* End PBXProject section */
@@ -162,6 +179,29 @@
 			};
 			name = Release;
 		};
+		6883BAA81BD80FC4007B4E24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6883BAA91BD80FC4007B4E24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -181,6 +221,16 @@
 				6864F8321BC5FD09004795D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6883BAA71BD80FC4007B4E24 /* Build configuration list for PBXLegacyTarget "YLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6883BAA81BD80FC4007B4E24 /* Debug */,
+				6883BAA91BD80FC4007B4E24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

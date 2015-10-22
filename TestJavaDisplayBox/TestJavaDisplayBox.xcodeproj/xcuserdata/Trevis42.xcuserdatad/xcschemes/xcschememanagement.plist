@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JavaDis copy copy copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>JavaDis copy copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>JavaDis copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TestJavaDisplayBox.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +28,21 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>6864F82D1BC5FD09004795D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6883BAA61BD80FC4007B4E24</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6883BAAA1BD80FD1007B4E24</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6883BAAE1BD80FD8007B4E24</key>
 		<dict>
 			<key>primary</key>
 			<true/>
