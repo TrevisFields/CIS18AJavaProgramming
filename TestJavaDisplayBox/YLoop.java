@@ -587,21 +587,27 @@ public class ProjectedSales
         
         
         next_Year_Projection_North = sales_North * PERCENT/ 4;
-        next_Year_Projection_South - sales_South * PERCENT /4;
+        next_Year_Projection_South = sales_South * PERCENT / 4;
         
         
        
         
         JOptionPane.showMessageDialog("At the North Division of the store the sales team had " + sales_North + " in sales each quarter for a grand total of " + (sales_North * 4) + " in sales for the company.");
         JOptionPane.showMessageDialog("At the South Division of the store the sales team had " + sales_South + " in sales each quarter for a grand total of " + (sales_South * 4) +" in sales for the comany.");
-        JOptionPane.showMessageDialog("The projected sales at the North store are " + next_Year_Projection_North);
-        JOptionPane.showMessageDialog("The projected sales at the Southern store is " + next_Year_Projection_South);
+        JOptionPane.showMessageDialog("The projected sales at the North store are " + next_Year_Projection_North + " per quarter.");
+        JOptionPane.showMessageDialog("The projected sales at the Southern store is " + next_Year_Projection_South" per quarter.");
     }
 }
 
 
 
 
+
+
+
+
+
+//**************************************************************************************************
 
 
 
