@@ -1,8 +1,13 @@
+/*
+Trevis Fields
+CIS 18A M/W 3:00-5:10PM
+Homework # 03 Due Sept 26 2016
+*/
 package hw_03;
 public class Student 
 {
     // variables
- int id;
+ int id = 9999;
  double credit;
  double points;
  // get methods

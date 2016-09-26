@@ -4,13 +4,13 @@ public class ShowStudent
     public static void main(String[] args)
     {
     // Class     object     = new instance method
-    Student      trevis     = new Student();
+    Student      info     = new Student();
     
     // set values into student object
-    trevis.setId(2276714);
-    trevis.setCredit(12.0);
-    trevis.setPoints(3.0);
+    info.setId(2276714);
+    info.setCredit(3.0);
+    info.setPoints(12.0);
     
-    System.out.println(trevis.displayInfo());
+    System.out.println(info.displayInfo());
     }
 }
