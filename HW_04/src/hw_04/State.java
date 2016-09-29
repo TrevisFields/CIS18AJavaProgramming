@@ -34,6 +34,15 @@ public class State
     {
         return capitalCity.getCityPop();
     }
+    public String getMostPopulousCityName()
+    {
+        return mostPopulousCity.getCityName();
+    }
+    
+    public int getMostPopulousCityPop()
+    {
+        return mostPopulousCity.getCityPop();
+    }
     
     //Inner class should always be private
     private class City
