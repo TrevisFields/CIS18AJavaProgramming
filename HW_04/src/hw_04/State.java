@@ -42,6 +42,17 @@ public class State
     {
         return mostPopulousCity.getCityPop();
     }
+    
+    //Display method
+    public void displayCityInfo()
+    {
+        System.out.println("State: " + getStateName());
+        System.out.println("State Population: " + getStatePopulation());
+        System.out.println("Capital City: " + getCapitalName());
+        System.out.println("Capital Population: " + getCapitalPop());
+        System.out.println("Most Populous City: " + getMostPopulousCityName());
+        System.out.println("Most Populous Cit Population: " + getMostPopulousCityPop());
+    }
     //Inner class should always be private
     private class City
     {
