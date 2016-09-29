@@ -1,14 +1,46 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package hw_04;
+public class State 
+{
+    //Create Class/ Datatype    object/ variables
+    String                       stateName;
+    int                          statePopulation;
+    City                          capitalCity;
+    City                          mostPopulousCity;
+    
+    //Constructor method with 6 parameters
+    public State(String s,int sp, String cc,int cp, String mc, int mp)
+    {
+        stateName = s;
+        statePopulation = sp;
+        
+        //Object    = new constructor method
+        capitalCity = new City(cc, cp);
+        mostPopulousCity = new City(mc, mp);
+    }
+    
+    //Inner class should always be private
+    private class City
+    {
+        private String cityName;
+        private int cityPop;
+        
+        //Inner constructor method with 2 parameters
+        public City(String c, int p)
+        {
+            cityName = c;
+            cityPop = p;
+        }
+        //Get methods
+        public String getCityName() 
+        {
+            return cityName;
+        }
 
-/**
- *
- * @author TrevisFields
- */
-public class State {
+        public int getCityPop() 
+        {
+            return cityPop;
+        }
+        
+    }
     
 }
