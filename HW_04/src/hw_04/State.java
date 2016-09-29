@@ -17,6 +17,23 @@ public class State
         capitalCity = new City(cc, cp);
         mostPopulousCity = new City(mc, mp);
     }
+        //Get methods
+    public String getStateName()
+    {
+        return stateName;
+    }
+    public int getStatePopulation()
+    {
+        return statePopulation;
+    }
+    public String getCapitalName()
+    {
+        return capitalCity.getCityName();
+    }
+    public int getCapitalPop()
+    {
+        return capitalCity.getCityPop();
+    }
     
     //Inner class should always be private
     private class City
