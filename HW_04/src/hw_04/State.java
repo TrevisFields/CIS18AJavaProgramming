@@ -38,12 +38,10 @@ public class State
     {
         return mostPopulousCity.getCityName();
     }
-    
     public int getMostPopulousCityPop()
     {
         return mostPopulousCity.getCityPop();
     }
-    
     //Inner class should always be private
     private class City
     {
@@ -61,12 +59,9 @@ public class State
         {
             return cityName;
         }
-
         public int getCityPop() 
         {
             return cityPop;
-        }
-        
+        }   
     }
-    
 }
