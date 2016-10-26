@@ -60,7 +60,7 @@ public class Count21
 				//If the total is 21 and above, set whenGameOver to true
 				if(total >= 21)
 				{
-					JOptionPane.showMessageDialog(null, "You Lose FOOL!");
+					JOptionPane.showMessageDialog(null, "Sorry, you lose");
 					whenGameOver = true;
 				}
 				else {
@@ -80,7 +80,7 @@ public class Count21
 				if(total >= 21)
 					
 				{
-					JOptionPane.showMessageDialog(null, "You Lose FOOL!");
+					JOptionPane.showMessageDialog(null, "Sorry, you Lose.");
 					whenGameOver = true;
 				}
 				else {
