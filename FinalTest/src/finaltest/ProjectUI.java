@@ -11,6 +11,7 @@ import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.*;
 
 
 @SuppressWarnings("serial")
@@ -34,22 +35,27 @@ public class ProjectUI extends JFrame implements ActionListener{
     public ProjectUI(){
         init();
         setTitle("CLOTHING ORDER");
-        setSize(400, 400);  //width, height
+        setSize(1000, 700);  //width, height
         setVisible(true);   //show frame
         setLayout(new BorderLayout()); 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         
         aPanel.setLayout(new FlowLayout());
-        aPanel.setBackground(Color.BLUE);
+        aPanel.setBackground(Color.GREEN);
         
         //adding stuff in the panel
+        //doBorderLayoutForAPanel();
+        
+        doGridLayoutForAPanel();
+        /*
         aPanel.add(customerLabel);
         aPanel.add(customerField);
         aPanel.add(sizePanel);
         aPanel.add(comboBox);
         aPanel.add(checkBox);
         aPanel.add(submitButton);
+*/
         
         //adding stuff in the frame
         add(aPanel);
@@ -98,12 +104,32 @@ if(e.getSource().equals(submitButton))
      }
  }
  if(checkBox.isSelected()){
- message += " WILL PICK UP ITEM\n";
+ message += "\n WILL PICK UP ITEM\n";
  }else{
- message += " ITEMS WILL BE SHIPPED\n";
+ message += "\n ITEMS WILL BE SHIPPED\n";
  }
  JOptionPane.showConfirmDialog(null, message);
 }
+}
+public void doBorderLayoutForAPanel(){
+aPanel.setLayout(new BorderLayout());
+
+aPanel.add(customerLabel, BorderLayout.NORTH);
+aPanel.add(submitButton, BorderLayout.SOUTH);
+aPanel.add(sizePanel, BorderLayout.WEST);
+aPanel.add(comboBox, BorderLayout.EAST);
+aPanel.add(customerField, BorderLayout.CENTER);
+}
+public void doGridLayoutForAPanel(){
+aPanel.setLayout(new GridLayout(4,2));
+
+aPanel.add(customerLabel);
+aPanel.add(customerField);
+aPanel.add(sizePanel);
+        aPanel.add(comboBox);
+        aPanel.add(checkBox);
+        aPanel.add(submitButton);
+        
 }
 }
 
