@@ -48,7 +48,7 @@ public class ProjectUI extends JFrame implements ActionListener{
         //doBorderLayoutForAPanel();
         
        // doGridLayoutForAPanel();
-        
+        doGridBagLayoutForAPanel();
         //aPanel.add(customerLabel);
         //aPanel.add(customerField);
         //aPanel.add(sizePanel);
