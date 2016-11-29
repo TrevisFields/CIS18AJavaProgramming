@@ -47,15 +47,15 @@ public class ProjectUI extends JFrame implements ActionListener{
         //adding stuff in the panel
         //doBorderLayoutForAPanel();
         
-        doGridLayoutForAPanel();
-        /*
-        aPanel.add(customerLabel);
-        aPanel.add(customerField);
-        aPanel.add(sizePanel);
-        aPanel.add(comboBox);
-        aPanel.add(checkBox);
-        aPanel.add(submitButton);
-*/
+       // doGridLayoutForAPanel();
+        
+        //aPanel.add(customerLabel);
+        //aPanel.add(customerField);
+        //aPanel.add(sizePanel);
+        //aPanel.add(comboBox);
+        //aPanel.add(checkBox);
+        //aPanel.add(submitButton);
+
         
         //adding stuff in the frame
         add(aPanel);
@@ -74,6 +74,21 @@ public class ProjectUI extends JFrame implements ActionListener{
     }
     comboBox.addActionListener(this);
     submitButton.addActionListener(this);
+    }
+    
+    
+    public void doGridBagLayoutForAPanel(){
+    aPanel.setLayout(new GridBagLayout());
+    
+    GridBagConstraints constraints = new GridBagConstraints();
+    
+    constraints.gridx = 0;
+    constraints.gridy = 0;
+    aPanel.add(customerField, constraints);
+    
+    constraints.gridx = 1;
+    constraints.gridy = 0;
+    aPanel.add(customerField, constraints);
     }
     
  @Override
