@@ -42,7 +42,7 @@ public class ProjectUI extends JFrame implements ActionListener{
         
         
         aPanel.setLayout(new FlowLayout());
-        aPanel.setBackground(Color.GREEN);
+        aPanel.setBackground(Color.WHITE);
         
         //adding stuff in the panel
         //doBorderLayoutForAPanel();
