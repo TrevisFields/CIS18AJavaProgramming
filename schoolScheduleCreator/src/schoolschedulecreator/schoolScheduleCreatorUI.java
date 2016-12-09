@@ -1,4 +1,5 @@
-package finaltest;
+package schoolschedulecreator;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
@@ -15,8 +16,9 @@ import java.awt.*;
 
 
 @SuppressWarnings("serial")
-public class ProjectUI extends JFrame implements ActionListener{
-   
+public class schoolScheduleCreatorUI extends JFrame implements ActionListener {
+    
+    
     //Global 
     final String[] SIZE_STRING = {"XS", "S", "M", "L", "XL", "XXL"};
     final String[] COLOR_STRINGS ={"(Select Color)"," RED", " GREEN", " BLUE", " HOT PINK"};
@@ -32,7 +34,7 @@ public class ProjectUI extends JFrame implements ActionListener{
     
     
     //constructor for ProjectUI
-    public ProjectUI(){
+    public schoolScheduleCreatorUI(){
         init();
         setTitle("CLOTHING ORDER");
         setSize(1000, 700);  //width, height
@@ -42,10 +44,10 @@ public class ProjectUI extends JFrame implements ActionListener{
         
         
         aPanel.setLayout(new FlowLayout());
-        aPanel.setBackground(Color.WHITE);
+        aPanel.setBackground(Color.RED);
         
         //adding stuff in the panel
-        //doBorderLayoutForAPanel();
+        doBorderLayoutForAPanel();
         
        // doGridLayoutForAPanel();
         //doGridBagLayoutForAPanel();
@@ -126,8 +128,6 @@ if(e.getSource().equals(submitButton))
  JOptionPane.showConfirmDialog(null, message);
 }
 }
-
-
 public void doBorderLayoutForAPanel(){
 aPanel.setLayout(new BorderLayout());
 
@@ -138,7 +138,7 @@ aPanel.add(comboBox, BorderLayout.EAST);
 aPanel.add(customerField, BorderLayout.CENTER);
 }
 public void doGridLayoutForAPanel(){
-aPanel.setLayout(new GridLayout(3,2));
+aPanel.setLayout(new GridLayout(4,2));
 
 aPanel.add(customerLabel);
 aPanel.add(customerField);
@@ -149,10 +149,5 @@ aPanel.add(sizePanel);
         
 }
 }
-
-
-//Search google for an icon for the checkout button
-//save it and then go to the assets folder create and save the image into the images folder
-//64 x 64 image
 
 
