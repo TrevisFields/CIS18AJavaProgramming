@@ -1,14 +1,5 @@
 package finalproject;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import java.awt.FlowLayout;
-import java.awt.Color;
-import java.awt.BorderLayout;
-import javax.swing.BorderFactory;
-import javax.swing.JTextField;
-import javax.swing.JRadioButton;
-import javax.swing.ButtonGroup;
+
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
@@ -19,7 +10,7 @@ public class finalProjectUI extends JFrame implements ActionListener
 {
    //GLOBAL DEFINITIONS
     final String[] SCHOOL_YEAR = {"FRESHMAN","SOPHOMORE","JUNIOR","SENIOR"};
-    final String[] TIME_FOR_SCHOOL = {" SELECT TIME "," MORNING "," AFTERNOON "," NIGHT "};
+    final String[] TIME_FOR_SCHOOL = {"SELECT TIME","MORNING","AFTERNOON ","NIGHT"};
     
     JPanel aPanel = new JPanel();
     
@@ -79,6 +70,7 @@ public class finalProjectUI extends JFrame implements ActionListener
     sizePanel.add(sizeButtons[i]);
     }
     comboBox.addActionListener(this);
+    
     submitButton.addActionListener(this);
     }
     
@@ -110,29 +102,44 @@ if(e.getSource().equals(comboBox)){
 }
 if(e.getSource().equals(submitButton))
 {
- String message = customerField.getText().toString() + "\n";
+ String message = "Hello, " + customerField.getText().toString() + "\n";
  
- for(int i = 0; i < sizeButtons.length; i++){
-     if(sizeButtons[i].isSelected()){
-         message += sizeButtons[i].getText().toString();
-     }
- }
+ // School year loop
+  
  for(int i = 0; i < TIME_FOR_SCHOOL.length; i++){
      if(comboBox.getSelectedItem().toString().equals(TIME_FOR_SCHOOL[i]))
      {
-         message += comboBox.getSelectedItem().toString();
+         message += "Your schedule is: " + comboBox.getSelectedItem().toString();
      }
  }
  if(checkBox.isSelected()){
- message += "\n First year student\n";
+ message += "\nFirst year student?\n";
  }else{
- message += "\n Returning or transfer student\n";
+ message += "\nReturning Student\n";
  }
  JOptionPane.showConfirmDialog(null, message);
-}
+
+for(int i = 0; i < sizeButtons.length; i++){
+     if(sizeButtons[i].isSelected()){
+         message += sizeButtons[i].getText().toString();
+         if (sizeButtons[i] == sizeButtons[0]){
+         JOptionPane.showMessageDialog(null,"FRESHMAN:\nCHE-001\nMAT-100\nCIS-101\nPHY-201");
+     }
+     if (sizeButtons[i] == sizeButtons[1]){
+         JOptionPane.showMessageDialog(null,"SOPHMORE:\nMAT-200\nCHE-002\nCIS-102\nPHY-202");
+     }
+     if (sizeButtons[i] == sizeButtons[2]){
+         JOptionPane.showMessageDialog(null,"JUNIOR:\nCIS-103\nCHE-003\nMAT-300\nPHY-203");
+     }
+     if (sizeButtons[i] == sizeButtons[3]) {
+         JOptionPane.showMessageDialog(null,"SENIOR:\nPHY-204\nCHE-004\nMAT-400\nCIS-104");
+     }
+     }
 }
 
-public void doGridLayoutForAPanel(){
+}
+
+public void doGridLayoutForAPanel() {
 aPanel.setLayout(new GridLayout(8,2));
 
 aPanel.add(customerLabel);
