@@ -125,7 +125,7 @@ if(e.getSource().equals(comboBox))
      {
      if(comboBox.getSelectedItem().toString().equals(TIME_FOR_SCHOOL[i]))
         {
-         message += "Your schedule is: " + comboBox.getSelectedItem().toString();
+         message += "Your schedule time will be: " + comboBox.getSelectedItem().toString();
         }
      }
  if(checkBox.isSelected())
