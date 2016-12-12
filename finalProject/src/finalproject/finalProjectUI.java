@@ -18,8 +18,7 @@ import java.nio.ByteBuffer;
 @SuppressWarnings("serial")
 public class finalProjectUI extends JFrame implements ActionListener
 {
-    
-    
+       
    //GLOBAL DEFINITIONS
     final String[] SCHOOL_YEAR = {"FRESHMAN","SOPHOMORE","JUNIOR","SENIOR"};
     final String[] TIME_FOR_SCHOOL = {"SELECT TIME","MORNING","AFTERNOON ","NIGHT"};
@@ -166,9 +165,8 @@ for(int i = 0; i < sizeButtons.length; i++)
 * December 6 program broken and does not run
 * December 8 program running but does not have any exception handling for files to write to
 * December 10 program fixed again but still no files 
-*/
 
-/* 
+ 
 *** PROGRAM IDEAS ***
 * Create a program that gives the user a Freshman, Sophomore, Junior, or Senior schedule that is generic:
 (if) the user does not select anything the schedule will be based off a generic morning, afternoon, or night schedule
