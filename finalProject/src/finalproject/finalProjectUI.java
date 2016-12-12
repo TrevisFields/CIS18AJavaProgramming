@@ -12,8 +12,7 @@ public class finalProjectUI extends JFrame implements ActionListener
     final String[] SCHOOL_YEAR = {"FRESHMAN","SOPHOMORE","JUNIOR","SENIOR"};
     final String[] TIME_FOR_SCHOOL = {"SELECT TIME","MORNING","AFTERNOON ","NIGHT"};
     
-    JPanel aPanel = new JPanel();
-    
+    JPanel aPanel = new JPanel(); 
     JPanel sizePanel = new JPanel();
     JLabel customerLabel = new JLabel("STUDENT NAME OR ID#: ");
     JTextField customerField = new JTextField(24); //length of text field
@@ -55,7 +54,7 @@ public class finalProjectUI extends JFrame implements ActionListener
         
         //adding stuff in the frame
         add(aPanel);
-    }
+    
     
     
     public void init() //initializing method
@@ -113,30 +112,31 @@ if(e.getSource().equals(submitButton))
      }
  }
  if(checkBox.isSelected()){
- message += "\nFirst year student?\n";
+ message += "\nYou are a: First year student\n";
  }else{
- message += "\nReturning Student\n";
+ message += "\nYou are a: Returning Student\n";
  }
- JOptionPane.showConfirmDialog(null, message);
+ JOptionPane.showMessageDialog(null, message);
 
-for(int i = 0; i < sizeButtons.length; i++){
-     if(sizeButtons[i].isSelected()){
+for(int i = 0; i < sizeButtons.length; i++)
+{
+     if(sizeButtons[i].isSelected())
+     {
          message += sizeButtons[i].getText().toString();
          if (sizeButtons[i] == sizeButtons[0]){
-         JOptionPane.showMessageDialog(null,"FRESHMAN:\nCHE-001\nMAT-100\nCIS-101\nPHY-201");
+         JOptionPane.showMessageDialog(null,"FRESHMAN SCHEDULE:\nCHE-001\nMAT-100\nCIS-101\nPHY-201");
      }
      if (sizeButtons[i] == sizeButtons[1]){
-         JOptionPane.showMessageDialog(null,"SOPHMORE:\nMAT-200\nCHE-002\nCIS-102\nPHY-202");
+         JOptionPane.showMessageDialog(null,"SOPHMORE SCHEDULE:\nMAT-200\nCHE-002\nCIS-102\nPHY-202");
      }
      if (sizeButtons[i] == sizeButtons[2]){
-         JOptionPane.showMessageDialog(null,"JUNIOR:\nCIS-103\nCHE-003\nMAT-300\nPHY-203");
+         JOptionPane.showMessageDialog(null,"JUNIOR SCHEDULE:\nCIS-103\nCHE-003\nMAT-300\nPHY-203");
      }
      if (sizeButtons[i] == sizeButtons[3]) {
-         JOptionPane.showMessageDialog(null,"SENIOR:\nPHY-204\nCHE-004\nMAT-400\nCIS-104");
+         JOptionPane.showMessageDialog(null,"SENIOR SCHEDULE:\nPHY-204\nCHE-004\nMAT-400\nCIS-104");
      }
      }
 }
-
 }
 
 public void doGridLayoutForAPanel() {
