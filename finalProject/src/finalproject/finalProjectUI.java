@@ -146,7 +146,7 @@ for(int i = 0; i < sizeButtons.length; i++)
          JOptionPane.showMessageDialog(null,"FRESHMAN SCHEDULE:\nCHE-001\nMAT-100\nCIS-101\nPHY-201");
      }
      if (sizeButtons[i] == sizeButtons[1]){
-         JOptionPane.showMessageDialog(null,"SOPHMORE SCHEDULE:\nMAT-200\nCHE-002\nCIS-102\nPHY-202");
+         JOptionPane.showMessageDialog(null,"SOPHOMORE SCHEDULE:\nMAT-200\nCHE-002\nCIS-102\nPHY-202");
      }
      if (sizeButtons[i] == sizeButtons[2]){
          JOptionPane.showMessageDialog(null,"JUNIOR SCHEDULE:\nCIS-103\nCHE-003\nMAT-300\nPHY-203");
