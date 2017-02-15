@@ -17,9 +17,9 @@ public class FinalProject
         new finalProjectUI();
         
         Path file =
-                Paths.get("..\\FinalProject\\assests\\Freshman.rtf");
+                Paths.get("..\\FinalProject\\assests\\Freshman.txt");
                 System.getProperty("line.separator");
-        byte[] data = c.getBytes();
+        byte[] data = s.getBytes();
         ByteBuffer buffer = ByteBuffer.wrap(data);
         final int NUMRECS = 1000;
         try
@@ -29,7 +29,7 @@ public class FinalProject
             BufferedWriter writer = new
             BufferedWriter(new OutputStreamWriter(output));
             for(int count = 0; count < NUMRECS; ++count)
-                writer.write(c, 0, c.length());
+                writer.write(s, 0, s.length());
             writer.close();
         }
         catch(Exception e)
